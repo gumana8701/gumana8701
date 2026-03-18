@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F8FAFC" />
+      <stop offset="100%" style="stop-color:#EFF6FF" />
+    </linearGradient>
+    <filter id="shadow3" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+    <marker id="a3" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#38BDF8"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="500" fill="url(#bg3)" rx="16"/>
+
+  <text x="600" y="42" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#1E3A5F" text-anchor="middle">GHL QA Agent KPIs Dashboard</text>
+  <text x="600" y="65" font-family="system-ui, sans-serif" font-size="13" fill="#64748B" text-anchor="middle">Real-time QA scoring and call attempt tracking for GoHighLevel sales teams</text>
+
+  <!-- Box 1: GHL Call Data -->
+  <rect x="40" y="120" width="240" height="110" rx="12" fill="white" stroke="#38BDF8" stroke-width="2" filter="url(#shadow3)"/>
+  <circle cx="58" cy="132" r="11" fill="#38BDF8"/>
+  <text x="58" y="136" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="white" text-anchor="middle">1</text>
+  <text x="160" y="158" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#1E3A5F" text-anchor="middle">GHL Call Activity</text>
+  <text x="160" y="178" font-family="system-ui, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Agent Calls + Recordings</text>
+  <text x="160" y="198" font-family="system-ui, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">Call attempts, duration, outcomes</text>
+  <text x="160" y="211" font-family="system-ui, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">per agent per day</text>
+
+  <!-- Arrow -->
+  <line x1="280" y1="175" x2="350" y2="175" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#a3)"/>
+  <text x="315" y="166" font-family="system-ui, sans-serif" font-size="9" fill="#38BDF8" text-anchor="middle">sync</text>
+
+  <!-- Box 2: Supabase -->
+  <rect x="355" y="120" width="240" height="110" rx="12" fill="white" stroke="#3ECF8E" stroke-width="2" filter="url(#shadow3)"/>
+  <circle cx="373" cy="132" r="11" fill="#3ECF8E"/>
+  <text x="373" y="136" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="white" text-anchor="middle">2</text>
+  <text x="475" y="158" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#1E3A5F" text-anchor="middle">Supabase</text>
+  <text x="475" y="178" font-family="system-ui, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Real-Time Database</text>
+  <text x="475" y="198" font-family="system-ui, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">Stores call data, QA scores</text>
+  <text x="475" y="211" font-family="system-ui, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">Aggregates KPIs per agent</text>
+
+  <!-- Arrow -->
+  <line x1="595" y1="175" x2="665" y2="175" stroke="#3ECF8E" stroke-width="2.5" marker-end="url(#a3)"/>
+  <text x="630" y="166" font-family="system-ui, sans-serif" font-size="9" fill="#3ECF8E" text-anchor="middle">query</text>
+
+  <!-- Box 3: Dashboard -->
+  <rect x="670" y="120" width="240" height="110" rx="12" fill="white" stroke="#2DD4BF" stroke-width="2" filter="url(#shadow3)"/>
+  <circle cx="688" cy="132" r="11" fill="#2DD4BF"/>
+  <text x="688" y="136" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="white" text-anchor="middle">3</text>
+  <text x="790" y="158" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#1E3A5F" text-anchor="middle">KPI Dashboard</text>
+  <text x="790" y="178" font-family="system-ui, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Next.js + Tailwind</text>
+  <text x="790" y="198" font-family="system-ui, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">QA scores, call metrics</text>
+  <text x="790" y="211" font-family="system-ui, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">Agent rankings, trends</text>
+
+  <!-- Arrow -->
+  <line x1="910" y1="175" x2="960" y2="175" stroke="#2DD4BF" stroke-width="2.5" marker-end="url(#a3)"/>
+
+  <!-- Box 4: Alerts -->
+  <rect x="965" y="120" width="200" height="110" rx="12" fill="white" stroke="#F59E0B" stroke-width="2" filter="url(#shadow3)"/>
+  <circle cx="983" cy="132" r="11" fill="#F59E0B"/>
+  <text x="983" y="136" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="white" text-anchor="middle">4</text>
+  <text x="1065" y="158" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#1E3A5F" text-anchor="middle">Mgmt Alerts</text>
+  <text x="1065" y="178" font-family="system-ui, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Threshold Triggers</text>
+  <text x="1065" y="198" font-family="system-ui, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">Low QA score warnings</text>
+  <text x="1065" y="211" font-family="system-ui, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">Missed target alerts</text>
+
+  <!-- KPI Cards -->
+  <text x="120" y="290" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1E3A5F">Key Metrics Tracked:</text>
+
+  <rect x="40" y="310" width="260" height="70" rx="10" fill="white" stroke="#E2E8F0" stroke-width="1" filter="url(#shadow3)"/>
+  <text x="60" y="335" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#38BDF8">QA Score</text>
+  <text x="60" y="365" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">Per agent quality rating based on call review criteria</text>
+
+  <rect x="320" y="310" width="260" height="70" rx="10" fill="white" stroke="#E2E8F0" stroke-width="1" filter="url(#shadow3)"/>
+  <text x="340" y="335" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#2DD4BF">Call Attempts</text>
+  <text x="340" y="365" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">Daily/weekly attempt counts vs. targets per agent</text>
+
+  <rect x="600" y="310" width="260" height="70" rx="10" fill="white" stroke="#E2E8F0" stroke-width="1" filter="url(#shadow3)"/>
+  <text x="620" y="335" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#8B5CF6">Connect Rate</text>
+  <text x="620" y="365" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">Percentage of attempts that reach a live person</text>
+
+  <rect x="880" y="310" width="260" height="70" rx="10" fill="white" stroke="#E2E8F0" stroke-width="1" filter="url(#shadow3)"/>
+  <text x="900" y="335" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#F59E0B">Booking %</text>
+  <text x="900" y="365" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">Calls that result in a booked appointment</text>
+
+  <!-- Legend -->
+  <rect x="40" y="420" width="1120" height="50" rx="10" fill="white" opacity="0.7" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="60" y="450" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#1E3A5F">Stack:</text>
+  <text x="110" y="450" font-family="system-ui, sans-serif" font-size="11" fill="#475569">Next.js 14 · Supabase (Real-time) · Tailwind CSS · Recharts · GoHighLevel API · Vercel</text>
+</svg>
