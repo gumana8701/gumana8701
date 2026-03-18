@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="550" viewBox="0 0 1200 550">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F8FAFC" />
+      <stop offset="100%" style="stop-color:#EFF6FF" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#38BDF8"/>
+    </marker>
+    <marker id="arrow-navy" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1E3A5F"/>
+    </marker>
+    <marker id="arrow-teal" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2DD4BF"/>
+    </marker>
+    <marker id="arrow-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8B5CF6"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#25D366"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#E11D48"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="550" fill="url(#bg)" rx="16"/>
+
+  <!-- Title -->
+  <text x="600" y="42" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#1E3A5F" text-anchor="middle">ORAIA — AI Voice Agent Workflow</text>
+  <text x="600" y="65" font-family="system-ui, sans-serif" font-size="13" fill="#64748B" text-anchor="middle">WhatsApp leads → AI voice calling → calendar booking → post-call analysis → team alerts</text>
+
+  <!-- ========== MAIN FLOW ========== -->
+
+  <!-- Box 1: WhatsApp (Lead Entry) -->
+  <rect x="30" y="110" width="190" height="95" rx="12" fill="white" stroke="#25D366" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="48" cy="122" r="11" fill="#25D366"/>
+  <text x="48" y="126" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="white" text-anchor="middle">1</text>
+  <text x="125" y="148" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#1E3A5F" text-anchor="middle">WhatsApp</text>
+  <text x="125" y="168" font-family="system-ui, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Lead Enters</text>
+  <text x="125" y="188" font-family="system-ui, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">Inbound message received</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="220" y1="157" x2="275" y2="157" stroke="#25D366" stroke-width="2.5" marker-end="url(#arrow-green)"/>
+  <text x="248" y="148" font-family="system-ui, sans-serif" font-size="9" fill="#25D366" text-anchor="middle">lead</text>
+
+  <!-- Box 2: GHL (CRM Hub) -->
+  <rect x="280" y="110" width="190" height="95" rx="12" fill="white" stroke="#38BDF8" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="298" cy="122" r="11" fill="#38BDF8"/>
+  <text x="298" y="126" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="white" text-anchor="middle">2</text>
+  <text x="375" y="148" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#1E3A5F" text-anchor="middle">GoHighLevel</text>
+  <text x="375" y="168" font-family="system-ui, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">CRM Pipeline</text>
+  <text x="375" y="188" font-family="system-ui, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">Triggers ElevenLabs call</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="470" y1="157" x2="525" y2="157" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="498" y="148" font-family="system-ui, sans-serif" font-size="9" fill="#38BDF8" text-anchor="middle">webhook</text>
+
+  <!-- Box 3: ElevenLabs (Voice Agent) -->
+  <rect x="530" y="110" width="190" height="95" rx="12" fill="white" stroke="#8B5CF6" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="548" cy="122" r="11" fill="#8B5CF6"/>
+  <text x="548" y="126" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="white" text-anchor="middle">3</text>
+  <text x="625" y="148" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#1E3A5F" text-anchor="middle">ElevenLabs</text>
+  <text x="625" y="168" font-family="system-ui, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">AI Voice Agent</text>
+  <text x="625" y="188" font-family="system-ui, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">Calls lead, natural convo</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="720" y1="157" x2="775" y2="157" stroke="#1E3A5F" stroke-width="2.5" marker-end="url(#arrow-navy)"/>
+  <text x="748" y="148" font-family="system-ui, sans-serif" font-size="9" fill="#1E3A5F" text-anchor="middle">call ends</text>
+
+  <!-- Box 4: n8n (Analysis) -->
+  <rect x="780" y="110" width="190" height="95" rx="12" fill="white" stroke="#2DD4BF" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="798" cy="122" r="11" fill="#2DD4BF"/>
+  <text x="798" y="126" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="white" text-anchor="middle">4</text>
+  <text x="875" y="148" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#1E3A5F" text-anchor="middle">n8n + GPT</text>
+  <text x="875" y="168" font-family="system-ui, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Post-Call Analysis</text>
+  <text x="875" y="188" font-family="system-ui, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">Analyzes transcript</text>
+
+  <!-- Arrow 4→5 -->
+  <line x1="970" y1="157" x2="1005" y2="157" stroke="#2DD4BF" stroke-width="2.5" marker-end="url(#arrow-teal)"/>
+
+  <!-- Box 5: Slack -->
+  <rect x="1010" y="110" width="160" height="95" rx="12" fill="white" stroke="#E11D48" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="1028" cy="122" r="11" fill="#E11D48"/>
+  <text x="1028" y="126" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="white" text-anchor="middle">5</text>
+  <text x="1090" y="148" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#1E3A5F" text-anchor="middle">Slack</text>
+  <text x="1090" y="168" font-family="system-ui, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Team Alerts</text>
+  <text x="1090" y="188" font-family="system-ui, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">Call results + status</text>
+
+  <!-- ========== ROW 2: ElevenLabs ↔ GHL Calendar ========== -->
+
+  <path d="M 635 205 L 635 280" stroke="#8B5CF6" stroke-width="2" stroke-dasharray="6,3" fill="none" marker-end="url(#arrow-purple)"/>
+  <path d="M 615 280 L 615 210" stroke="#38BDF8" stroke-width="2" stroke-dasharray="6,3" fill="none" marker-end="url(#arrow)"/>
+
+  <rect x="530" y="290" width="190" height="95" rx="12" fill="white" stroke="#38BDF8" stroke-width="2" filter="url(#shadow)"/>
+  <text x="625" y="325" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#1E3A5F" text-anchor="middle">GHL Calendar</text>
+  <text x="625" y="345" font-family="system-ui, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Availability + Booking</text>
+  <text x="625" y="365" font-family="system-ui, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">Agent checks slots in real-time</text>
+  <text x="625" y="378" font-family="system-ui, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">Books appointment during call</text>
+
+  <text x="650" y="240" font-family="system-ui, sans-serif" font-size="9" fill="#8B5CF6">check slots</text>
+  <text x="650" y="265" font-family="system-ui, sans-serif" font-size="9" fill="#38BDF8">confirm booking</text>
+
+  <!-- ========== Legend ========== -->
+  <rect x="30" y="430" width="1140" height="85" rx="10" fill="white" opacity="0.7" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="55" y="458" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#1E3A5F">Tech Stack:</text>
+  
+  <rect x="55" y="472" width="8" height="8" rx="2" fill="#25D366"/>
+  <text x="70" y="480" font-family="system-ui, sans-serif" font-size="11" fill="#475569">WhatsApp (Lead Entry)</text>
+  
+  <rect x="250" y="472" width="8" height="8" rx="2" fill="#38BDF8"/>
+  <text x="265" y="480" font-family="system-ui, sans-serif" font-size="11" fill="#475569">GoHighLevel (CRM + Calendar)</text>
+  
+  <rect x="500" y="472" width="8" height="8" rx="2" fill="#8B5CF6"/>
+  <text x="515" y="480" font-family="system-ui, sans-serif" font-size="11" fill="#475569">ElevenLabs (AI Voice Agent)</text>
+
+  <rect x="730" y="472" width="8" height="8" rx="2" fill="#2DD4BF"/>
+  <text x="745" y="480" font-family="system-ui, sans-serif" font-size="11" fill="#475569">n8n + GPT (Analysis)</text>
+  
+  <rect x="930" y="472" width="8" height="8" rx="2" fill="#E11D48"/>
+  <text x="945" y="480" font-family="system-ui, sans-serif" font-size="11" fill="#475569">Slack (Notifications)</text>
+
+  <text x="55" y="500" font-family="system-ui, sans-serif" font-size="10" fill="#94A3B8">Dashed lines = real-time bidirectional API calls during live call</text>
+</svg>
