@@ -1,31 +1,38 @@
-<picture>
-  <img alt="Guillermo Choto - AI Automation Architect" src="https://raw.githubusercontent.com/gumana8701/gumana8701/main/assets/banner.svg" width="100%"/>
-</picture>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/gumana8701/gumana8701/main/assets/logo-1.png" alt="synkeo.ai" width="150"/>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/gumana8701/gumana8701/main/assets/banner-1.png" alt="Guillermo Choto - AI Automation Architect" width="100%"/>
+</p>
 
 ## 👋 About Me
 
 I'm **Guillermo Choto**, founder of [synkeo.ai](https://synkeo.ai) — building intelligent automation systems that connect AI, voice, and data to solve real business problems.
 
-Based in **El Salvador** 🇸🇻, I specialize in designing and deploying end-to-end AI solutions: from voice agents that handle live calls, to custom API integrations that make platforms talk to each other seamlessly.
+Based in **El Salvador** 🇸🇻 (US Central Time), I specialize in designing and deploying end-to-end AI solutions: from voice agents that handle live calls, to custom API integrations that make platforms talk to each other seamlessly.
 
 ---
 
 ### 🛠️ What I Do
 
 **AI & Voice Agents**
-`Vapi.ai` `Retell` `Bland` `SimpleTalk` `ElevenLabs` `OpenClaw`
+`Vapi.ai` `Retell` `SimpleTalk` `ElevenLabs` `ManyChat` `Voiceflow` `Flowise` `OpenClaw`
 
 **Automation & Integration**
-`n8n` `Zapier` `Make.com` `Custom APIs` `Webhooks`
+`n8n` `Zapier` `Make.com` `Custom APIs` `REST` `OAuth` `Webhooks`
 
 **CRM & Data**
-`GoHighLevel (Certified)` `Airtable` `Clay.com` `Supabase`
+`GoHighLevel (Certified Admin)` `Airtable` `Clay.com` `Supabase`
 
 **Development**
 `Next.js` `TypeScript` `Node.js` `Vercel` `Postgres`
 
 **Infrastructure**
-`VPS Management` `Self-hosted LLMs` `Linux` `Docker`
+`VPS` `Self-hosted LLMs` `Docker` `Linux` `Retool` `AppSmith`
+
+**Dashboards & Reporting**
+`Looker Studio` `Power BI` `Google Sheets`
 
 ---
 
