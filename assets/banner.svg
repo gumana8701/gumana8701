@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="500" viewBox="0 0 1500 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F8FAFC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F2FE;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#38BDF8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2DD4BF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="nodeGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#38BDF8;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#C4B5FD;stop-opacity:0.15" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1500" height="500" fill="url(#bg)"/>
+  
+  <!-- Network nodes and connections (right side) -->
+  <!-- Connection lines -->
+  <line x1="950" y1="120" x2="1100" y2="200" stroke="#38BDF8" stroke-width="1.5" opacity="0.25"/>
+  <line x1="1100" y1="200" x2="1250" y2="150" stroke="#38BDF8" stroke-width="1.5" opacity="0.2"/>
+  <line x1="1100" y1="200" x2="1050" y2="350" stroke="#C4B5FD" stroke-width="1.5" opacity="0.2"/>
+  <line x1="1050" y1="350" x2="1200" y2="380" stroke="#38BDF8" stroke-width="1.5" opacity="0.15"/>
+  <line x1="1250" y1="150" x2="1350" y2="280" stroke="#C4B5FD" stroke-width="1.5" opacity="0.2"/>
+  <line x1="1350" y1="280" x2="1200" y2="380" stroke="#38BDF8" stroke-width="1.5" opacity="0.15"/>
+  <line x1="950" y1="120" x2="850" y2="250" stroke="#C4B5FD" stroke-width="1" opacity="0.15"/>
+  <line x1="850" y1="250" x2="1050" y2="350" stroke="#38BDF8" stroke-width="1" opacity="0.15"/>
+  <line x1="1350" y1="280" x2="1420" y2="180" stroke="#C4B5FD" stroke-width="1" opacity="0.12"/>
+  <line x1="1420" y1="180" x2="1250" y2="150" stroke="#38BDF8" stroke-width="1" opacity="0.12"/>
+  
+  <!-- Nodes -->
+  <circle cx="950" cy="120" r="6" fill="#38BDF8" opacity="0.4"/>
+  <circle cx="1100" cy="200" r="8" fill="#38BDF8" opacity="0.5"/>
+  <circle cx="1250" cy="150" r="5" fill="#C4B5FD" opacity="0.4"/>
+  <circle cx="1050" cy="350" r="7" fill="#C4B5FD" opacity="0.35"/>
+  <circle cx="1200" cy="380" r="5" fill="#38BDF8" opacity="0.3"/>
+  <circle cx="1350" cy="280" r="6" fill="#38BDF8" opacity="0.4"/>
+  <circle cx="850" cy="250" r="4" fill="#C4B5FD" opacity="0.25"/>
+  <circle cx="1420" cy="180" r="4" fill="#C4B5FD" opacity="0.2"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="1100" cy="200" r="20" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.15"/>
+  <circle cx="1350" cy="280" r="15" fill="none" stroke="#C4B5FD" stroke-width="1" opacity="0.12"/>
+  
+  <!-- Accent bar top -->
+  <rect x="0" y="0" width="1500" height="4" fill="url(#accent)"/>
+  
+  <!-- Main text -->
+  <text x="80" y="200" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="52" font-weight="700" fill="#1E3A5F" letter-spacing="-1">Guillermo Choto</text>
+  
+  <!-- Subtitle -->
+  <text x="80" y="250" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="400" fill="#475569" letter-spacing="0.5">AI Automation Architect</text>
+  
+  <!-- Divider line -->
+  <rect x="80" y="270" width="60" height="3" rx="1.5" fill="url(#accent)"/>
+  
+  <!-- Role badges -->
+  <text x="80" y="310" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" fill="#64748B">
+    <tspan>Founder @synkeo.ai</tspan>
+    <tspan dx="20" fill="#38BDF8">•</tspan>
+    <tspan dx="20">GHL Certified Agency Admin</tspan>
+    <tspan dx="20" fill="#38BDF8">•</tspan>
+    <tspan dx="20">AI Voice &amp; Automation Expert</tspan>
+  </text>
+  
+  <!-- Tech stack icons as text badges -->
+  <rect x="80" y="340" width="70" height="28" rx="14" fill="#38BDF8" opacity="0.1"/>
+  <text x="115" y="359" font-family="system-ui, sans-serif" font-size="12" fill="#38BDF8" text-anchor="middle" font-weight="600">Next.js</text>
+  
+  <rect x="160" y="340" width="80" height="28" rx="14" fill="#38BDF8" opacity="0.1"/>
+  <text x="200" y="359" font-family="system-ui, sans-serif" font-size="12" fill="#38BDF8" text-anchor="middle" font-weight="600">Supabase</text>
+  
+  <rect x="250" y="340" width="50" height="28" rx="14" fill="#C4B5FD" opacity="0.15"/>
+  <text x="275" y="359" font-family="system-ui, sans-serif" font-size="12" fill="#7C3AED" text-anchor="middle" font-weight="600">n8n</text>
+  
+  <rect x="310" y="340" width="70" height="28" rx="14" fill="#C4B5FD" opacity="0.15"/>
+  <text x="345" y="359" font-family="system-ui, sans-serif" font-size="12" fill="#7C3AED" text-anchor="middle" font-weight="600">Vapi.ai</text>
+  
+  <rect x="390" y="340" width="55" height="28" rx="14" fill="#2DD4BF" opacity="0.12"/>
+  <text x="417" y="359" font-family="system-ui, sans-serif" font-size="12" fill="#0D9488" text-anchor="middle" font-weight="600">GHL</text>
+  
+  <rect x="455" y="340" width="65" height="28" rx="14" fill="#2DD4BF" opacity="0.12"/>
+  <text x="487" y="359" font-family="system-ui, sans-serif" font-size="12" fill="#0D9488" text-anchor="middle" font-weight="600">Clay.com</text>
+  
+  <!-- Synkeo.ai branding bottom right -->
+  <text x="1380" y="460" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="600" fill="#38BDF8" text-anchor="end" opacity="0.7">synkeo.ai</text>
+  
+  <!-- Bottom accent bar -->
+  <rect x="0" y="496" width="1500" height="4" fill="url(#accent)"/>
+</svg>
